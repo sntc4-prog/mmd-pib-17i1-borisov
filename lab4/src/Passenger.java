@@ -14,7 +14,9 @@ public class Passenger {
         this.documentNumber = documentNumber;
         this.citizenship = citizenship;
     }
-    public String toString(){
-        return "";
+
+    @Override
+    public String toString() {
+        return this.surName + "  " + this.name + "  " + this.secondName + " Номер телефона: " + this.phoneNumber + " Номер документа Уд. личн.:" + this.documentNumber + " Гражданство: " + this.citizenship;
     }
 }
