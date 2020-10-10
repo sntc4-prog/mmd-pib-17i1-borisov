@@ -1,3 +1,5 @@
+package main.java;
+
 import java.time.LocalDateTime;
 
 public class Flight {
@@ -16,8 +18,9 @@ public class Flight {
         this.dateTimeDeparture = dateTimeDeparture;
         this.dateTimeArrival = dateTimeArrival;
     }
+
     @Override
-    public String toString(){
-        return "Номер полета:"+ this.flightNumber + " Самолет:" + this.airplane + " Аэропорт отправления:"+ this.airportDeparture + " Аэропорт назначения:" + this.airportDestination + " Время отправления:"+this.dateTimeDeparture + " Время прибытия:"+ this.dateTimeArrival;
+    public String toString() {
+        return "Номер полета:" + this.flightNumber + " Самолет:" + this.airplane + " Аэропорт отправления:" + this.airportDeparture + " Аэропорт назначения:" + this.airportDestination + " Время отправления:" + this.dateTimeDeparture + " Время прибытия:" + this.dateTimeArrival;
     }
 }
