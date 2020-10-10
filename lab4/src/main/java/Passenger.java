@@ -1,3 +1,5 @@
+package main.java;
+
 public class Passenger {
     String name;
     String surName;

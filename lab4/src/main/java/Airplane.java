@@ -1,3 +1,5 @@
+package main.java;
+
 public class Airplane {
     int numberOfSeatsClass1;
     int numberOfSeatsClassBusiness;
