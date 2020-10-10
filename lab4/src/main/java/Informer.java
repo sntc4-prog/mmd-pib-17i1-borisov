@@ -1,4 +1,4 @@
 package main.java;
 
-public class Informer {
+public interface Informer {
 }
