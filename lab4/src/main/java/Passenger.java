@@ -1,16 +1,16 @@
 package main.java;
 
 public class Passenger {
-    String name;
     String surName;
+    String name;
     String secondName;
     String phoneNumber;
     String documentNumber;
     String citizenship;
 
     public Passenger(String name, String surName, String secondName, String phoneNumber, String documentNumber, String citizenship) {
-        this.name = name;
         this.surName = surName;
+        this.name = name;
         this.secondName = secondName;
         this.phoneNumber = phoneNumber;
         this.documentNumber = documentNumber;
@@ -19,6 +19,6 @@ public class Passenger {
 
     @Override
     public String toString() {
-        return this.surName + "  " + this.name + "  " + this.secondName + " Номер телефона: " + this.phoneNumber + " Номер документа Уд. личн.:" + this.documentNumber + " Гражданство: " + this.citizenship;
+        return this.surName + " / " + this.name + " / " + this.secondName + " / Номер телефона: " + this.phoneNumber + " / Номер документа уд. личн.:" + this.documentNumber + " / Гражданство: " + this.citizenship;
     }
 }

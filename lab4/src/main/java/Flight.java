@@ -3,12 +3,12 @@ package main.java;
 import java.time.LocalDateTime;
 
 public class Flight {
-    String flightNumber;
-    Airplane airplane;
-    String airportDeparture;
-    String airportDestination;
-    LocalDateTime dateTimeDeparture;
-    LocalDateTime dateTimeArrival;
+    private final String flightNumber;
+    private final Airplane airplane;
+    private final String airportDeparture;
+    private final String airportDestination;
+    private final LocalDateTime dateTimeDeparture;
+    private final LocalDateTime dateTimeArrival;
 
     public Flight(String flightNumber, Airplane airplane, String airportDeparture, String airportDestination, LocalDateTime dateTimeDeparture, LocalDateTime dateTimeArrival) {
         this.flightNumber = flightNumber;
