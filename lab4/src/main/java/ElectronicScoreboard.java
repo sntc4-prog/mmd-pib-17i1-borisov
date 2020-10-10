@@ -1,4 +1,4 @@
 package main.java;
 
-public class ElectronicScoreboard {
+public class ElectronicScoreboard implements Informer{
 }

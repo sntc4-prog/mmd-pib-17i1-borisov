@@ -1,4 +1,4 @@
 package main.java;
 
-public class SmsInformer {
+public class SmsInformer implements Informer {
 }
