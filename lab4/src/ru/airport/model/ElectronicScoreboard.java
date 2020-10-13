@@ -1,13 +1,13 @@
 package ru.airport.model;
 
-public class ElectronicScoreboard implements Informer{
+public class ElectronicScoreboard implements Informer {
     @Override
-    public void informLanding(Object Flight, Object Runway) {
-
+    public void informLanding(Flight flight, Runway runway) {
+        System.out.println("/Табло!/Прибыл рейс:" + flight.getFlightNumber());
     }
 
     @Override
-    public void informTakeOff(Object Flight, Object Runway) {
-
+    public void informTakeOff(Flight flight, Runway runway) {
+        System.out.println("/Табло!/Рейс снят!:" + flight.getFlightNumber());
     }
 }

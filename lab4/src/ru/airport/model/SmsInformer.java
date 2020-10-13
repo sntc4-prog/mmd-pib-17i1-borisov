@@ -2,12 +2,12 @@ package ru.airport.model;
 
 public class SmsInformer implements Informer {
     @Override
-    public void informLanding(Object Flight, Object Runway) {
+    public void informLanding(Flight flight, Runway runway) {
 
     }
 
     @Override
-    public void informTakeOff(Object Flight, Object Runway) {
+    public void informTakeOff(Flight flight, Runway runway) {
 
     }
 }

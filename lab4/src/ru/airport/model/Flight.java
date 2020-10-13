@@ -19,6 +19,30 @@ public class Flight {
         this.dateTimeArrival = dateTimeArrival;
     }
 
+    public String getFlightNumber() {
+        return flightNumber;
+    }
+
+    public Airplane getAirplane() {
+        return airplane;
+    }
+
+    public String getAirportDeparture() {
+        return airportDeparture;
+    }
+
+    public String getAirportDestination() {
+        return airportDestination;
+    }
+
+    public LocalDateTime getDateTimeDeparture() {
+        return dateTimeDeparture;
+    }
+
+    public LocalDateTime getDateTimeArrival() {
+        return dateTimeArrival;
+    }
+
     @Override
     public String toString() {
         return "Номер полета:" + this.flightNumber + " Самолет:" + this.airplane + " Аэропорт отправления:" + this.airportDeparture + " Аэропорт назначения:" + this.airportDestination + " Время отправления:" + this.dateTimeDeparture + " Время прибытия:" + this.dateTimeArrival;

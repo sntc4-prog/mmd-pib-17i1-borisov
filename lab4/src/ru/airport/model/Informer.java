@@ -1,6 +1,6 @@
 package ru.airport.model;
 
 public interface Informer {
-    void informLanding(Object Flight, Object Runway);
-    void informTakeOff(Object Flight, Object Runway);
+    void informLanding(Flight flight, Runway runway);
+    void informTakeOff(Flight flight, Runway runway);
 }
