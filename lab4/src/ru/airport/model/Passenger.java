@@ -17,6 +17,34 @@ public class Passenger {
         this.citizenship = citizenship;
     }
 
+    public String getSurName() {
+        return surName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getDocumentNumber() {
+        return documentNumber;
+    }
+
+    public String getCitizenship() {
+        return citizenship;
+    }
+
+    public String getGreeting() {
+        return "Уважаемый " + this.name + " " + this.secondName;
+    }
+
     @Override
     public String toString() {
         return this.surName + " / " + this.name + " / " + this.secondName + " / Номер телефона: " + this.phoneNumber + " / Номер документа уд. личн.:" + this.documentNumber + " / Гражданство: " + this.citizenship;

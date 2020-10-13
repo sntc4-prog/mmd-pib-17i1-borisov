@@ -20,7 +20,7 @@ public class Airport {
         for (Runway runway : runways) {
             if (flight.equals(runway.getFlight())) {
                 runway.takeOff();
-                informAllAboutTakeOff(flight,runway);
+                informAllAboutTakeOff(flight, runway);
                 return;
             }
         }
@@ -37,8 +37,15 @@ public class Airport {
         return null;
     }
 
-    public Order buyTicket(Passenger pas, Flight flight) {
-        return new Order(1, flight, pas);
+    public Order buyTicket(Passenger passenger, Flight flight) {
+        Order order = new Order(flight, passenger);
+        orders.add(order);
+        return order;
+    }
+
+    @Override
+    public String toString() {
+        return "Кол-во купленных билетов = " + orders.size();
     }
 
     private void informAllAboutLanding(Flight flight, Runway runway) {

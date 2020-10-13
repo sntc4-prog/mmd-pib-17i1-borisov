@@ -1,14 +1,28 @@
 package ru.airport.model;
 
 public class Order {
-    int number;
-    Flight flight;
-    Passenger passenger;
+    private static int NEXT_NUMBER = 1;
 
-    public Order(int number, Flight flight, Passenger passenger) {
-        this.number = number;
+    private final int number;
+    private final Flight flight;
+    private final Passenger passenger;
+
+    Order(Flight flight, Passenger passenger) {
+        this.number = NEXT_NUMBER++;
         this.flight = flight;
         this.passenger = passenger;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public Passenger getPassenger() {
+        return passenger;
     }
 
     @Override

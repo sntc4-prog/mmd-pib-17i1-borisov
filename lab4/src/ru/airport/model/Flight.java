@@ -1,6 +1,8 @@
 package ru.airport.model;
 
+import java.lang.annotation.Inherited;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Flight {
     private final String flightNumber;
@@ -46,5 +48,18 @@ public class Flight {
     @Override
     public String toString() {
         return "Номер полета:" + this.flightNumber + " Самолет:" + this.airplane + " Аэропорт отправления:" + this.airportDeparture + " Аэропорт назначения:" + this.airportDestination + " Время отправления:" + this.dateTimeDeparture + " Время прибытия:" + this.dateTimeArrival;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Flight flight = (Flight) o;
+        return flightNumber.equals(flight.flightNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(flightNumber);
     }
 }
