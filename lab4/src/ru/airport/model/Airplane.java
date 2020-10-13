@@ -33,9 +33,9 @@ public class Airplane {
 
     @Override
     public String toString() {
-        return this.model + " Мест в 1м классе" + this.numberOfSeatsClass1 +
-                " Мест в бизнес классе" + this.numberOfSeatsClassBusiness +
-                " Мест в эконом класе" + this.numberOfSeatsClassEconom;
+        return this.model + " | Мест в 1м классе = " + this.numberOfSeatsClass1 +
+                " | Мест в бизнес классе = " + this.numberOfSeatsClassBusiness +
+                " | Мест в эконом класе = " + this.numberOfSeatsClassEconom;
     }
 }
 
