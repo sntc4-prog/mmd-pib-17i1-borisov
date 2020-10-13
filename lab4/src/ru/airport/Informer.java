@@ -1,4 +1,4 @@
-package main.java;
+package ru.airport;
 
 public interface Informer {
     void informLanding(Object Flight, Object Runway);

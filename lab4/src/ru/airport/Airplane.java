@@ -1,4 +1,4 @@
-package main.java;
+package ru.airport;
 
 public class Airplane {
     private final int numberOfSeatsClass1;

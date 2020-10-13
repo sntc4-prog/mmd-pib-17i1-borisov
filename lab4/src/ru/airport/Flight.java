@@ -1,4 +1,4 @@
-package main.java;
+package ru.airport;
 
 import java.time.LocalDateTime;
 

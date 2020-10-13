@@ -1,4 +1,4 @@
-package main.java;
+package ru.airport;
 
 public class Passenger {
     String surName;

@@ -1,4 +1,4 @@
-package main.java;
+package ru.airport;
 
 public class Runway {
     private int number;
