@@ -4,16 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Airport {
-    private final List<Runway> runways;
-    private List<Order> orders;
+    private final List<Runway> runways = new ArrayList<>();
+    private final List<Order> orders = new ArrayList<>();
     private final List<Informer> informers = new ArrayList<>();
 
     public Airport(int numberOfRunways) {
-        this.runways = new ArrayList<>();
         for (int i = 1; i <= numberOfRunways; i++) {
             this.runways.add(new Runway(i));
         }
-        informers.add(new SmsInformer());
+        informers.add(new SmsInformer(orders));
         informers.add(new ElectronicScoreboard());
     }
 
