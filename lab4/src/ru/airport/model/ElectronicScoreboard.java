@@ -8,6 +8,6 @@ public class ElectronicScoreboard implements Informer {
 
     @Override
     public void informTakeOff(Flight flight, Runway runway) {
-        System.out.println("/Табло!/Рейс снят!:" + flight.getFlightNumber() + " На полосу:" + runway.getNumber());
+        System.out.println("/Табло!/Рейс снят!:" + flight.getFlightNumber() + " с полосы:" + runway.getNumber());
     }
 }

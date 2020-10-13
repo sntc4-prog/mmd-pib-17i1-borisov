@@ -18,7 +18,13 @@ public class Airport {
     }
 
     public void takeOff(Flight flight) {
-
+        for (Runway runway : runways) {
+            if (flight.equals(runway.getFlight())) {
+                runway.takeOff();
+                informAllAboutTakeOff(flight,runway);
+                return;
+            }
+        }
     }
 
     public Runway planeLanding(Flight flight) {
@@ -39,6 +45,12 @@ public class Airport {
     private void informAllAboutLanding(Flight flight, Runway runway) {
         for (Informer informer : informers) {
             informer.informLanding(flight, runway);
+        }
+    }
+
+    private void informAllAboutTakeOff(Flight flight, Runway runway) {
+        for (Informer informer : informers) {
+            informer.informTakeOff(flight, runway);
         }
     }
 }

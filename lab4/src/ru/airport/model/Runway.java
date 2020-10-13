@@ -21,6 +21,10 @@ public class Runway {
         this.flight = flight;
     }
 
+    public void takeOff() {
+        this.flight = null;
+    }
+
     public boolean isFree() {
         return flight == null;
     }
