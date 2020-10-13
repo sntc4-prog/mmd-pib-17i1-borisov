@@ -1,10 +1,10 @@
 package main.java;
 
 public class Airplane {
-    int numberOfSeatsClass1;
-    int numberOfSeatsClassBusiness;
-    int numberOfSeatsClassEconom;
-    AirplaneModel model;
+    private final int numberOfSeatsClass1;
+    private final int numberOfSeatsClassBusiness;
+    private final int numberOfSeatsClassEconom;
+    private final AirplaneModel model;
 
     public Airplane(
             int numberOfSeatsClass1, int numberOfSeatsClassBusiness, int numberOfSeatsClassEconom, AirplaneModel model
@@ -13,6 +13,22 @@ public class Airplane {
         this.numberOfSeatsClassBusiness = numberOfSeatsClassBusiness;
         this.numberOfSeatsClassEconom = numberOfSeatsClassEconom;
         this.model = model;
+    }
+
+    public int getNumberOfSeatsClass1() {
+        return numberOfSeatsClass1;
+    }
+
+    public int getNumberOfSeatsClassBusiness() {
+        return numberOfSeatsClassBusiness;
+    }
+
+    public int getNumberOfSeatsClassEconom() {
+        return numberOfSeatsClassEconom;
+    }
+
+    public AirplaneModel getModel() {
+        return model;
     }
 
     @Override
