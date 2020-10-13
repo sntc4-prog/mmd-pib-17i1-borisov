@@ -1,5 +1,9 @@
 package ru.airport;
 
+import ru.airport.model.Airplane;
+import ru.airport.model.AirplaneModel;
+import ru.airport.model.Passenger;
+
 public class Main {
     public static void main(String[] args) {
         Passenger pas1 = new Passenger(

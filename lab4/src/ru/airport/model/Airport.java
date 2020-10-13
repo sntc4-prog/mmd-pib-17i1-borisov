@@ -1,4 +1,4 @@
-package ru.airport;
+package ru.airport.model;
 
 import java.util.ArrayList;
 import java.util.List;

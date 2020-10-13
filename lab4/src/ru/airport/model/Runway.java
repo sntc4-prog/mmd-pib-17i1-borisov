@@ -1,4 +1,4 @@
-package ru.airport;
+package ru.airport.model;
 
 public class Runway {
     private int number;

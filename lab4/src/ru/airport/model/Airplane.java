@@ -1,4 +1,4 @@
-package ru.airport;
+package ru.airport.model;
 
 public class Airplane {
     private final int numberOfSeatsClass1;

@@ -1,4 +1,4 @@
-package ru.airport;
+package ru.airport.model;
 
 public interface Informer {
     void informLanding(Object Flight, Object Runway);

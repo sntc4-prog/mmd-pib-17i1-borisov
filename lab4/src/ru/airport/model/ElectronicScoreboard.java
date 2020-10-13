@@ -1,6 +1,6 @@
-package ru.airport;
+package ru.airport.model;
 
-public class SmsInformer implements Informer {
+public class ElectronicScoreboard implements Informer{
     @Override
     public void informLanding(Object Flight, Object Runway) {
 
