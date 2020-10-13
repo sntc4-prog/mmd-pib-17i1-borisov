@@ -1,12 +1,12 @@
 package ru.airport.model;
 
 public class Passenger {
-    String surName;
-    String name;
-    String secondName;
-    String phoneNumber;
-    String documentNumber;
-    String citizenship;
+    private final String surName;
+    private final String name;
+    private final String secondName;
+    private final String phoneNumber;
+    private final String documentNumber;
+    private final String citizenship;
 
     public Passenger(String name, String surName, String secondName, String phoneNumber, String documentNumber, String citizenship) {
         this.surName = surName;
