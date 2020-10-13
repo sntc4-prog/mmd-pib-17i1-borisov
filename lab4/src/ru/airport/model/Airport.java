@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Airport {
-    private List<Runway> runways;
+    private final List<Runway> runways;
     private List<Order> orders;
     private final List<Informer> informers = new ArrayList<>();
 
@@ -23,11 +23,9 @@ public class Airport {
 
     public Runway planeLanding(Flight flight) {
         for (Runway runway : runways) {
-            if (runway.getFlight() == null) {
-                runway.setFlight(flight);
-                for (Informer informer : informers) {
-                    informer.informLanding(flight, runway);
-                }
+            if (runway.isFree()) {
+                runway.land(flight);
+                informAllAboutLanding(flight, runway);
                 return runway;
             }
         }
@@ -38,4 +36,9 @@ public class Airport {
         return new Order(1, flight, pas);
     }
 
+    private void informAllAboutLanding(Flight flight, Runway runway) {
+        for (Informer informer : informers) {
+            informer.informLanding(flight, runway);
+        }
+    }
 }

@@ -17,7 +17,11 @@ public class Runway {
         return flight;
     }
 
-    public void setFlight(Flight flight) {
+    public void land(Flight flight) {
         this.flight = flight;
+    }
+
+    public boolean isFree() {
+        return flight == null;
     }
 }
