@@ -27,6 +27,14 @@ public class SmsInformer implements Informer {
 
     @Override
     public void informTakeOff(Flight flight, Runway runway) {
-        System.out.println("/SMS!/Рейс снят!:" + flight.getFlightNumber());
+        for (Order order : orders) {
+            if (flight.equals(order.getFlight())) {
+                Passenger passenger = order.getPassenger();
+                System.out.println(
+                        "/SMS!/" + passenger.getPhoneNumber() + " "
+                                + passenger.getGreeting() + ", Рейс снят!:" + flight.getFlightNumber()
+                );
+            }
+        }
     }
 }
