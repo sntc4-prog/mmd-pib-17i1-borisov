@@ -1,10 +1,11 @@
 package ru.airport.model;
 
+import java.io.Serializable;
 import java.lang.annotation.Inherited;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class Flight {
+public class Flight implements Serializable {
     private final String flightNumber;
     private final Airplane airplane;
     private final String airportDeparture;

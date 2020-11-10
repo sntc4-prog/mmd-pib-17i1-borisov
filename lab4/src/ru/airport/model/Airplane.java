@@ -1,6 +1,8 @@
 package ru.airport.model;
 
-public class Airplane {
+import java.io.Serializable;
+
+public class Airplane implements Serializable {
     private final int numberOfSeatsClass1;
     private final int numberOfSeatsClassBusiness;
     private final int numberOfSeatsClassEconom;

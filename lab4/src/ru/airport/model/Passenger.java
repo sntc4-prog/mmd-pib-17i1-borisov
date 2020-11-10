@@ -1,6 +1,8 @@
 package ru.airport.model;
 
-public class Passenger {
+import java.io.Serializable;
+
+public class Passenger implements Serializable {
     private final String surName;
     private final String name;
     private final String secondName;
