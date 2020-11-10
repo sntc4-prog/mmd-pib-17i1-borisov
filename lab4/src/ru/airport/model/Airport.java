@@ -1,9 +1,10 @@
 package ru.airport.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Airport {
+public class Airport implements Serializable {
     private final List<Runway> runways = new ArrayList<>();
     private final List<Order> orders = new ArrayList<>();
     private final List<Informer> informers = new ArrayList<>();
@@ -43,6 +44,10 @@ public class Airport {
         return order;
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+
     @Override
     public String toString() {
         return "Кол-во купленных билетов = " + orders.size();
@@ -59,4 +64,5 @@ public class Airport {
             informer.informTakeOff(flight, runway);
         }
     }
+
 }

@@ -1,6 +1,8 @@
 package ru.airport.model;
 
-public class Order {
+import java.io.Serializable;
+
+public class Order implements Serializable {
     private static int NEXT_NUMBER = 1;
 
     private final int number;

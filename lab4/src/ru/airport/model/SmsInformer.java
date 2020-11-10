@@ -1,9 +1,10 @@
 package ru.airport.model;
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class SmsInformer implements Informer {
+public class SmsInformer implements Informer, Serializable {
     private final List<Order> orders;
 
     public SmsInformer(List<Order> orders) {

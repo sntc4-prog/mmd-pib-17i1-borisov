@@ -1,6 +1,8 @@
 package ru.airport.model;
 
-public enum AirplaneModel {
+import java.io.Serializable;
+
+public enum AirplaneModel implements Serializable {
     BOING_737, BOING_747, BOING_777
 }
 

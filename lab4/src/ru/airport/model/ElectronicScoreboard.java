@@ -1,6 +1,8 @@
 package ru.airport.model;
 
-public class ElectronicScoreboard implements Informer {
+import java.io.Serializable;
+
+public class ElectronicScoreboard implements Informer, Serializable {
     @Override
     public void informLanding(Flight flight, Runway runway) {
         System.out.println("/Табло!/Прибыл рейс:" + flight.getFlightNumber() + " На полосу:" + runway.getNumber());

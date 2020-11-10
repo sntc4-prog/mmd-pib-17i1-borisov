@@ -1,6 +1,8 @@
 package ru.airport.model;
 
-public class Runway {
+import java.io.Serializable;
+
+public class Runway implements Serializable {
     private final int number;
     private Flight flight;
 
